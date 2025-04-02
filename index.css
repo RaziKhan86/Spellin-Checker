@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+body {
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+  }
+
+.main{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.text-value{
+    max-width: 700px; 
+    max-height: 400px;
+    min-width: 700px;
+    min-height: 400px;
+    height: 100px; 
+    padding: 10px;
+    border: 3px solid #ccc;
+    border-radius: 4px;
+    font-family: "Work Sans", sans-serif;  
+    font-size: 1.5em;
+    box-sizing: border-box;
+  }
+  
+.text-value:focus {
+    outline: none; /* Remove default outline */
+    border-color: #007BFF; /* Change border on focus */
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25); /* Add focus shadow */
+} 
+
+.btn{
+    width: 10%;              /* Make buttons share available space */
+    height: 40px;             /* Set a fixed height */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-sizing: border-box; /* Include padding in width/height */
+    display: inline-flex; /* Use inline-flex for better alignment */
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+h1{
+    text-align: center;
+}
+@media only screen and (max-width: 700px) {
+    .text-value {
+        max-width: 100%;
+        min-width: unset;
+        min-height: 200px; /* Increase textarea size */
+        font-size: 1.1em; /* Slightly increase font size */
+        padding: 10px;
+    }
+
+    .btn {
+        width: 10%; /* Reduce button width */
+        font-size: 0.8em; /* Reduce button text size */
+        height: 30px; /* Adjust button height */
+    }
+}
+
+
+@media only screen and (max-width: 768px)
+{
+    .text-value {
+        max-width: 100%;
+        min-width: unset;
+        min-height: 150px;
+        font-size: 1em;
+    }
+    
+    .btn {
+        width: 30%; /* Adjust button width for small screens */
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    .text-value {
+        /* min-height: 120px; */
+        max-width: 100%;
+        min-width: unset;
+        font-size: 0.9em; /* Reduce font size for better fit */
+        padding: 8px; /* Reduce padding */
+    }
+
+    .btn {
+        width: 30%; /* Make button wider for better touch accessibility */
+        font-size: 10px; /* Reduce button text size */
+        height: 10px;
+    }
+}
