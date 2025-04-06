@@ -62,3 +62,20 @@ function CheckText() {
         loadDictionary(Text);
     }
 }
+
+// DarkMode
+document.querySelector('.js-dark-mode').addEventListener('click',()=>{
+    DrakMode();
+});
+let darkMode = false;
+function DrakMode(){ 
+    if(!darkMode){
+        document.body.style.backgroundColor = 'black';
+        document.body.style.color = 'white';
+        darkMode = true;
+    }else{
+        document.body.style.backgroundColor = 'white';
+        document.body.style.color = 'black';
+        darkMode = false;
+    }
+}
