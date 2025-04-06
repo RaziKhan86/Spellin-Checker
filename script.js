@@ -1,6 +1,10 @@
 const Textarea = document.getElementById('text');
 const Display = document.querySelector(".display");
 
+document.getElementById('reset').addEventListener('click',(button)=>{
+    ResetText();
+});
+
 function ResetText() {
     Textarea.value = '';
     Display.innerHTML  = '';
@@ -48,6 +52,10 @@ async function loadDictionary(Text) {
 
 
 // caling function when i click check button
+document.querySelector('.js-checkout').addEventListener('click',()=>{
+    CheckText();
+});
+
 function CheckText() {
     let Text = Textarea.value;
     if (Text.length > 0) {
